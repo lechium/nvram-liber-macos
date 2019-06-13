@@ -4,9 +4,9 @@
 
 ## prebuilt bin + extension + script method:
 
-- chmod +x enableSip.sh
+- chmod +x jailbreak-macos.sh
 
-- Run ./enableSip.sh
+- ./jailbreak-macos.sh
 
 ## manual method:
 
