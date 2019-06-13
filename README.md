@@ -32,3 +32,37 @@ $ sudo bin/nvram-liber-macos $(nm /System/Library/Kernels/kernel | egrep 'mac_po
 ```sudo nvram boot-args="-v cs_enforcement_disable=1 amfi_get_out_of_my_way=1 keepsyms=1 intcoproc_unrestricted=1 amfi_allow_any_signature=0"```
 
 Also see [this thread on newosxbook forum](http://www.newosxbook.com/forum/viewtopic.php?t=16798).
+
+
+## Example Success Log
+
+```$ ./jailbreak-macos.sh 
+
+Checking SIP Status...
+
+Password:
+Requesting load of /System/Library/Extensions/net.siguza.hsp4.kext.
+/System/Library/Extensions/net.siguza.hsp4.kext loaded successfully (or already loaded).
+
+Running liber-macos...
+
+Assuming 0xffffff800012d498 isn't offset but unslid address
+Offset is 0xa1d370
+5 policies loaded
+Policy #1: 'TMSafetyNet'
+Policy #2: 'AMFI'
+Policy #3: 'Sandbox'
+Found Sandbox
+Policies at 0xffffff7f85851118
+Successfully nulled out Sandbox nvram policies
+Policy #4: 'Quarantine'
+Policy #5: 'ASP'
+
+Disabling SIP completely...
+
+
+Setting boot-args....
+
+boot-args    -v cs_enforcement_disable=1 amfi_get_out_of_my_way=1 keepsyms=1 intcoproc_unrestricted=1 amfi_allow_any_signature=0x1
+
+Done... please reboot...```
